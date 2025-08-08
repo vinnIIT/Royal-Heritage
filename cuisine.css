@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(61, 36, 36, 0.986);
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(151, 91, 91);
+  padding: 15px 0;
+  z-index: 10;
+}
+.nav-bar nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+.nav-bar nav ul li a {
+  color: rgb(238, 201, 201);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.5s;
+}
+.nav-bar nav ul li a:hover {
+  background-color: rgb(88, 50, 13);
+  border-radius: 5px;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.main_head1 h1{
+  font-family: 'Crimson Pro', serif;
+  color: white;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.main_head1 p{
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.food_container {
+  display: flex;
+  justify-content: start;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  gap: 4rem;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+}
+.Category {
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  color: white;
+  text-decoration: underline;
+  font-family: Alegreya;
+}
+.Food_Card {
+  width: 20rem;
+  height: 18rem;
+  border: 2px solid white;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgb(10, 41, 7) 0px 15px 25px, rgb(0, 0, 0) 0px 5px 10px;
+}
+.Food_Card:hover {
+  scale: 1.03;
+  transition: all 0.4s ease-in-out;
+}
+.dish_Img img{
+  width: 19.8rem;
+  height: 15rem;
+}
+.dish_Name {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.1rem;
+  font-family: cursive;
+}
+
+/* ==== MEDIA QUERIES START ==== */
+
+@media (max-width: 1024px) {
+  .main_head1 h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 4.5rem 1rem 0 1rem;
+  }
+
+  .main_head1 p {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .food_container {
+    justify-content: center;
+    gap: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .Food_Card {
+    width: 18rem;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .dish_Img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dish_Name {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-bar nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgb(151, 91, 91);
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-bar nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    background-color: #221a1a;
+  }
+
+  .main_head1 h1 {
+    font-size: 1.8rem;
+    margin-top: 5rem;
+  }
+
+  .main_head1 p {
+    font-size: 1rem;
+    margin: 0 1.5rem;
+  }
+
+  .food_container {
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .Food_Card {
+    width: 100%;
+    max-width: 18rem;
+    margin: 1rem auto;
+  }
+
+  .dish_Img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dish_Name {
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main_head1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .main_head1 p {
+    font-size: 0.95rem;
+    margin: 0 1rem;
+  }
+
+  .food_container {
+    gap: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .Food_Card {
+    width: 100%;
+    max-width: 16rem;
+    height: auto;
+  }
+
+  .dish_Img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .dish_Name {
+    font-size: 0.95rem;
+  }
+
+  .Category {
+    font-size: 1.2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* ==== MEDIA QUERIES END ==== */

@@ -1,0 +1,186 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f2ef;
+  color: #333;
+  line-height: 1.6;
+}
+.backBtn {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.backBtn button {
+  width: 4.8rem;
+  height: 2rem;
+  background-color: #0e4c66;
+  color: white;
+  border: none;
+  font-size: 1rem;
+}
+.backBtn button:hover {
+  cursor: pointer;
+  background-color: #302525;
+  font-weight: bold;
+}
+
+/* Developer Intro Section */
+.developer_Intro {
+  max-width: 1000px;
+  margin: 50px auto;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  text-align: center;
+  color: #111;
+}
+
+.developer_Intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.developer_Intro p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.developer_Intro button {
+  padding: 12px 30px;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.developer_Intro button:hover {
+  background-color: #333;
+}
+
+/* Feedback Form Section */
+.feedbackForm {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.feedbackForm h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.feedbackForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedbackForm input,
+.feedbackForm textarea {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.feedbackForm input:focus,
+.feedbackForm textarea:focus {
+  border-color: #f8b500;
+  outline: none;
+}
+
+.feedbackForm textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.feedbackForm button[type="submit"] {
+  padding: 12px;
+  background-color: #f8b500;
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedbackForm button[type="submit"]:hover {
+  background-color: #e29e00;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.social-media-icons .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons .icon:hover {
+  transform: scale(1.2);
+  background-color: #f8b500;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Platform-specific colors on hover */
+.social-media-icons .linkedin:hover { background-color: #0077b5; }
+.social-media-icons .github:hover { background-color: #333; }
+.social-media-icons .instagram:hover { background-color: #e1306c; }
+
+.Back {
+  display: flex;
+  justify-content: end;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .developer_Intro, .feedbackForm {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .developer_Intro h1 {
+    font-size: 2rem;
+  }
+
+  .feedbackForm h2 {
+    font-size: 1.7rem;
+  }
+
+  .social-media-icons {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

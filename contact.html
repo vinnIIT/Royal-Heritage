@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="IMAGE" href="Logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="backBtn">
+        <a href="index.html">
+            <button>Home</button>
+        </a>
+    </div>
+    <section>
+        <div class="developer_Intro">
+            <h1>Meet the Developer</h1>
+            <p>Hello dear Visitors!😊 This is <strong>Vineet Sharma</strong> from Rajasthan, the mind and hands behind this Rajasthan-themed website <strong>(Rajasthan - The Royal Heritage)</strong>. As someone deeply fascinated by India's rich culture and royal legacy, I wanted to create something that doesn't just show information — but makes you feel the essence of Rajasthan. <br>Being a Frontend Developer, I love combining creativity with code to bring ideas to life. This project is not just a showcase of Rajasthan, but also a reflection of my passion for both design and storytelling through the web. <br>If this website gave you even a glimpse of the royal charm I felt while building it, then my purpose is fulfilled. <br>Your thoughts, suggestions, or even a simple hello mean a lot to me. <br>
+            This website was created not just to showcase Rajasthan, but also to connect with people who appreciate art, culture, and stories. <br>If you enjoyed your journey through this virtual royal land, please take a moment to share your feedback. It will help me improve and inspire future projects. <br>
+            Thank you for visiting — Your words can shape my next creation. 😊</p>
+            <a href="#feedback-form">
+                <button type="button">Feedback</button>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="feedbackForm" id="feedback-form">
+        <h2>Connect with Us!</h2>
+        <form id="feedbackForm" action="https://formsubmit.co/sharmavineet2206@gmail.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email"  placeholder="EMAIL" required>
+            <textarea name="feedback" id="" placeholder="Your Feedback..." required></textarea>
+            <div class="social-media-icons">
+                <a href="https://www.linkedin.com/in/vineet-sharma-8484b5232/" target="_blank" class="icon linkedin" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/" target="_blank" class="icon github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/xvineet22/" target="_blank" class="icon instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
+            <button type="submit">SEND TO US</button>
+        </form>
+        <!-- Hidden Thank You Message -->
+            <div id="thankYouMessage" style="display: none; text-align: center; margin-top: 20px;">
+                <h3>Thank you for your feedback! 😊</h3>
+                <a href="index.html"> <!-- Update this to your homepage path -->
+                    <button  style="padding: 10px 20px; font-size: 1rem; background-color: royalblue; color: white; border: none; border-radius: 8px; cursor: pointer;">Back Home</button>
+                </a>
+            </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>
